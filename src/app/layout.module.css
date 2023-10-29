@@ -1,0 +1,34 @@
+.layout {
+  }
+
+  .header {
+    font-size: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #444444;
+  }
+
+  .headerLinks {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  @media screen and (max-width: 749px) {
+    .headerLinks {
+      font-size: 16px;
+    }
+  }
+  .headerLinks li {
+    list-style: none;
+  }
+
+  .footer {
+    text-align: center;
+    background-color: #444444;
+  }
+
+  @media screen and (max-width: 749px) {
+    .footer h2 {
+      font-size: 16px;
+    }
+  }

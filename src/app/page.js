@@ -1,94 +1,57 @@
-import Image from 'next/image'
 import styles from './page.module.css'
+
+function GameCard({ href, src, alt, title, description }) {
+  return (
+    <div className={styles.card}>
+      <a href={href} className={styles.HomeIconLink}>
+        <img src={src} alt={alt} className={styles.HomeIconImg}/>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </a>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <h1 className={styles.title}>コンテンツ</h1>
+      <div className={styles.HomeIconList}>
+        <GameCard
+          href="/memoryGame"
+          src="/images/MemoryGameHomeIcon.png"
+          alt="MemoryGameIcon"
+          title="神経衰弱"
+          description="記憶力を鍛えるゲーム"
         />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <GameCard
+          href="/comingSoon"
+          src="/images/TicTacToeGameHomeIcon.png"
+          alt="TicTacToeGameIcon"
+          title="三目並べ"
+          description="ルールは簡単、三つ並べるだけ！"
+        />
+        <GameCard
+          href="/comingSoon"
+          src="/images/ReverseGameHomeIcon.png"
+          alt="ReverseGameIcon"
+          title="オセロ"
+          description="白黒、一瞬で逆転！"
+        />
+        <GameCard
+          href="/comingSoon"
+          src="/images/make10GameHomeIcon.png"
+          alt="make10GameIcon"
+          title="数字重ね"
+          description="数字を重ねて10を作ろう！"
+        />
+        <GameCard
+          href="/comingSoon"
+          src="/images/solitaireGameHomeIcon.png"
+          alt="solitaireGameIcon"
+          title="ソリティア"
+          description="心静かに、一手一手を重ねて"
+        />
       </div>
     </main>
   )
