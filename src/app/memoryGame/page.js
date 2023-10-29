@@ -61,7 +61,7 @@ export default function MemoryGame() {
                         <div key={index} onClick={() => handleCardClick(index, card)} >
                             {isSelected || isMatched ?
                                 <img src={card.image} alt={`Card ${card.id}`}  className={styles.MemoryGameCard}/> :
-                                <img src='images/MemoryGameBackImage.png' alt='カードの背面' className={styles.MemoryGameCard} />
+                                <img src='/images/MemoryGameBackImage.png' alt='カードの背面' className={styles.MemoryGameCard} />
                             }
                         </div>
                     );
