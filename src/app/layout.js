@@ -1,5 +1,7 @@
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
+import Head from 'next/head';
+import Script from 'next/script';
 import './globals.css';
 import styles from './layout.module.css';  // Import the styles
 
@@ -13,9 +15,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ja">
-      <head>
-        <link rel="icon" href="/favicon.ico"></link>
-      </head>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </Head>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-7LY4HN3ZPV"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-7LY4HN3ZPV');
+        `}
+      </Script>
       <body>
         <div className={styles.layout}>
           <header className={styles.header}>
