@@ -19,8 +19,13 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4179804001346610" crossorigin="anonymous"></script>
+
       </Head>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4179804001346610"
+        crossorigin="anonymous"
+      />
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-7LY4HN3ZPV"
         strategy="afterInteractive"

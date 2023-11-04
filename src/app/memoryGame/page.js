@@ -4,15 +4,15 @@ import styles from '../page.module.css';
 
 export default function MemoryGame() {
     const cards = [
-        { id: 1, image: '../images/Card1.png' },
-        { id: 2, image: '../images/Card2.png' },
-        { id: 3, image: '../images/Card3.png' },
-        { id: 4, image: '../images/Card4.png' },
-        { id: 5, image: '../images/Card5.png' },
-        { id: 6, image: '../images/Card6.png' },
-        { id: 7, image: '../images/Card7.png' },
-        { id: 8, image: '../images/Card8.png' },
-        { id: 9, image: '../images/Card9.png' },
+        { id: 1, image: '../images/Card1.webp' },
+        { id: 2, image: '../images/Card2.webp' },
+        { id: 3, image: '../images/Card3.webp' },
+        { id: 4, image: '../images/Card4.webp' },
+        { id: 5, image: '../images/Card5.webp' },
+        { id: 6, image: '../images/Card6.webp' },
+        { id: 7, image: '../images/Card7.webp' },
+        { id: 8, image: '../images/Card8.webp' },
+        { id: 9, image: '../images/Card9.webp' },
     ];
 
     const [shuffledCards, setShuffledCards] = useState([...cards, ...cards]);
@@ -61,7 +61,7 @@ export default function MemoryGame() {
                         <div key={index} onClick={() => handleCardClick(index, card)} >
                             {isSelected || isMatched ?
                                 <img src={card.image} alt={`Card ${card.id}`}  className={styles.MemoryGameCard}/> :
-                                <img src='../images/MemoryGameBackImage.png' alt='カードの背面' className={styles.MemoryGameCard} />
+                                <img src='../images/MemoryGameBackImage.webp' alt='カードの背面' className={styles.MemoryGameCard} />
                             }
                         </div>
                     );
