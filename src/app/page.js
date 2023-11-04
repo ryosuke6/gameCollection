@@ -27,7 +27,7 @@ export default function Home() {
           description="記憶力を鍛えるゲーム"
         />
         <GameCard
-          href="/comingSoon"
+          href="/ticTacToe"
           src="images/TicTacToeGameHomeIcon.webp"
           alt="TicTacToeGameIcon"
           title="三目並べ"
