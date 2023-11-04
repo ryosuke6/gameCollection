@@ -21,35 +21,35 @@ export default function Home() {
       <div className={styles.HomeIconList}>
         <GameCard
           href="/memoryGame"
-          src="/gameCollection/images/MemoryGameHomeIcon.png"
+          src="images/MemoryGameHomeIcon.png"
           alt="MemoryGameIcon"
           title="神経衰弱"
           description="記憶力を鍛えるゲーム"
         />
         <GameCard
           href="/comingSoon"
-          src="/gameCollection/images/TicTacToeGameHomeIcon.png"
+          src="images/TicTacToeGameHomeIcon.png"
           alt="TicTacToeGameIcon"
           title="三目並べ"
           description="ルールは簡単、三つ並べるだけ！"
         />
         <GameCard
           href="/comingSoon"
-          src="/gameCollection/images/ReverseGameHomeIcon.png"
+          src="images/ReverseGameHomeIcon.png"
           alt="ReverseGameIcon"
           title="オセロ"
           description="白黒、一瞬で逆転！"
         />
         <GameCard
           href="/comingSoon"
-          src="/gameCollection/images/make10GameHomeIcon.png"
+          src="images/make10GameHomeIcon.png"
           alt="make10GameIcon"
           title="数字重ね"
           description="数字を重ねて10を作ろう！"
         />
         <GameCard
           href="/comingSoon"
-          src="/gameCollection/images/solitaireGameHomeIcon.png"
+          src="images/solitaireGameHomeIcon.png"
           alt="solitaireGameIcon"
           title="ソリティア"
           description="心静かに、一手一手を重ねて"
