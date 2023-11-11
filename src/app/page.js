@@ -27,33 +27,40 @@ export default function Home() {
           description="記憶力を鍛えるゲーム"
         />
         <GameCard
+          href="/flashMentalArithmetic"
+          src="images/flashMentalArithmeticGameHomeIcon.webp"
+          alt="flashMentalArithmeticGameIcon"
+          title="フラッシュ暗算"
+          description="計算できる?"
+        />
+        <GameCard
           href="/ticTacToe"
           src="images/TicTacToeGameHomeIcon.webp"
           alt="TicTacToeGameIcon"
           title="三目並べ"
           description="ルールは簡単、三つ並べるだけ！"
         />
-        <GameCard
+        {/* <GameCard
           href="/comingSoon"
           src="images/ReverseGameHomeIcon.webp"
           alt="ReverseGameIcon"
           title="オセロ"
           description="白黒、一瞬で逆転！"
-        />
-        <GameCard
+        /> */}
+        {/* <GameCard
           href="/comingSoon"
           src="images/make10GameHomeIcon.webp"
           alt="make10GameIcon"
           title="数字重ね"
           description="数字を重ねて10を作ろう！"
-        />
-        <GameCard
+        /> */}
+        {/* <GameCard
           href="/comingSoon"
           src="images/solitaireGameHomeIcon.webp"
           alt="solitaireGameIcon"
           title="ソリティア"
           description="心静かに、一手一手を重ねて"
-        />
+        /> */}
       </div>
     </main>
   )
