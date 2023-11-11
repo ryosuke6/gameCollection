@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && cp CNAME out/",
+    "build": "next build && cp src/app/CNAME out/",
     "export": "next export",
     "start": "next start",
     "lint": "next lint"
