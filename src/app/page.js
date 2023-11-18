@@ -40,6 +40,13 @@ export default function Home() {
           title="三目並べ"
           description="ルールは簡単、三つ並べるだけ！"
         />
+        <GameCard
+          href="/blockBreak"
+          src="images/BlockBreakGameHomeIcon.webp"
+          alt="BlockBreakGameIcon"
+          title="ブロック崩し"
+          description="ブロックを崩していこう！"
+        />
         {/* <GameCard
           href="/comingSoon"
           src="images/ReverseGameHomeIcon.webp"

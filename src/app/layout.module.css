@@ -31,4 +31,23 @@
     .footer h2 {
       font-size: 16px;
     }
+    .mainContainer{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .adContainer {
+    display: flex;
+    justify-content: center; /* 中央揃え */
+  }
+
+  .mainContainer{
+    display: flex;
+  }
+  .mainContainer > :nth-child(1) {
+    align-self: center; /* 最初の要素だけ中央に配置 */
+  }
+  .mainContainer > :nth-child(3) {
+    align-self: center; /* 最初の要素だけ中央に配置 */
   }

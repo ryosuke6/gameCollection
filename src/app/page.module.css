@@ -4,6 +4,7 @@
   align-items: center;
   padding: 3rem;
   min-height: 100vh;
+  margin: 0 auto;
 }
 .main h1 {
   margin-bottom: 8px;
@@ -364,3 +365,51 @@
   font-size: 1rem;
   cursor: pointer;
 }
+
+/* 以下ブロック崩し用 */
+.mainCanvas {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(66, 66, 66);
+}
+
+.overlay {
+  position: fixed; /* または absolute */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒色 */
+  display: flex;
+  align-items: center; /* 縦方向の中央揃え */
+  justify-content: center; /* 横方向の中央揃え */
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center; /* テキストを中央揃え */
+  color: #000;
+  font-weight: 700;
+}
+.modal button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.arrowButtons {
+  display: flex;
+  width: 100%;
+  min-height: 40px;
+}
+.arrowButtons button {
+  width: 50%;
+}
+@media screen and (min-width: 749px) {
+  .arrowButtons {
+    display: none;
+  }
+}
+
